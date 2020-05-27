@@ -405,11 +405,25 @@ footer {
   nav.main-nav {
     display: none;
   }
+  .category {
+    width: 100px;
+    ul {
+      font-size: smaller;
+    }
+  }
   .coin-listings h3 {
     text-align: center;
   }
   .listings {
     margin-left: 4%;
+  }
+  .other-coins {
+    .category {
+      width: 100px !important;
+      ul {
+        font-size: smaller;
+      }
+    }
   }
   .newsletter {
     display: flex;
