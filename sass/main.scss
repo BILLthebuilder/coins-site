@@ -14,9 +14,9 @@ body {
   margin-right: 10%;
   background: $bg-color;
   letter-spacing: 0.1em;
-  // .mobile-nav {
-  //   display: none;
-  // }
+  .mobile-nav {
+    display: none;
+  }
 }
 a {
   text-decoration: none;
@@ -150,7 +150,7 @@ button {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: $text;
 }
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
@@ -165,7 +165,7 @@ button {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #333;
+  background: rgba(51, 51, 51, 0.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -387,6 +387,9 @@ footer {
   .top-links {
     letter-spacing: normal;
     margin-bottom: 2%;
+  }
+  .mobile-nav {
+    display: inline !important;
   }
   .logo-search {
     display: flex;
