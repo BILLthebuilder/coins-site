@@ -382,7 +382,28 @@ footer {
 }
 
 /* Media Queries */
-
+@media (max-width: 768px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    span {
+      display: none;
+    }
+    .subscribe {
+      width: 100%;
+    }
+  }
+  .other-coins {
+    .category {
+      width: 150px !important;
+      ul {
+        font-size: smaller;
+      }
+    }
+  }
+}
 @media (max-width: 425px) {
   .top-links {
     letter-spacing: normal;
