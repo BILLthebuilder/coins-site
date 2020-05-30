@@ -384,6 +384,7 @@ button {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-shadow: 2px 2px 5px;
   margin-top: 1%;
   margin-bottom: 2%;
@@ -398,7 +399,15 @@ footer {
   box-shadow: 0 20px 20px -20px #333;
   margin: -50px auto 10px;
 }
-
+.fb-link {
+  display: flex;
+  justify-content: center;
+  a {
+    img {
+      width: 20%;
+    }
+  }
+}
 /* Media Queries */
 @media (max-width: 1024px) {
   .newsletter {
